@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<meta charset="UTF-8">
+<title>War Impact Simulator</title>
+
+<link rel="stylesheet" href="style.css">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+
+</head>
+
+<body>
+
+<h1>🌍 War Impact Simulator</h1>
+
+<div class="controls">
+
+<h2>Scegli i Paesi in Conflitto</h2>
+
+<select id="countryA"></select>
+<select id="countryB"></select>
+
+<label>Durata Simulazione (mesi)</label>
+<input id="months" type="number" value="12">
+
+<button onclick="startSimulation()">Avvia Simulazione</button>
+
+</div>
+
+<div id="map"></div>
+
+<div class="dashboard">
+
+<h2>Risultati</h2>
+
+<canvas id="warChart"></canvas>
+
+<div id="report"></div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
